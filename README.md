@@ -4,22 +4,26 @@ This project demonstrates hands-on exploration of Linux file permission structur
 
 ## 🧰 Environment
 - **Operating System**: Debian-based Linux
-- **Tools Used**: `chmod`, `chown`, `ls`, `chmod -R`
+- **Tools Used**: `chmod`, `ls`, `ls -l`, `ls -la`
 - **Objective**: Understand and apply symbolic and numeric permission modes to manage file access securely
 
 ## 🔍 What This Project Covers
-- Interpreting symbolic (`rwx`) and numeric (`chmod 755`) file permission structures
-- Changing ownership and access rights using `chmod` and `chown`
-- Practicing recursive permission changes with `chmod -R` on directories
+- Reading and interpreting symbolic (rwx) file permission structures using ls -l and ls -la
+- Modifying access rights for users, groups, and others using `chmod`  
+- Exploring hidden files and permission flags with `ls -la`  
+- Adjusting directory visibility and access through permission changes  
+- Modifying file and directory permissions using symbolic mode to manage access securely
 - Real-world examples to simulate securing sensitive files
 
 ## 📁 Repository Contents
-```basic-filepermissions/
+```text
+basic-filepermissions/
 ├── basic-filepermissions.txt   # Hands-on examples and notes about Linux file permissions
 └── README.md                   # Project overview and learning objectives
 ```
 
-## 📄 Example Command
+## 📄 Example Commands
 ```bash
-chmod 750 confidential-report.txt
+chmod u-w,g-w,g+r .project_x.txt    # Remove write access from user/group, add read for group
+chmod g-x drafts                    # Prevent group from accessing the drafts directory
 ```
