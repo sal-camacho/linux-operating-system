@@ -1,9 +1,16 @@
-#Linux File Permissions
+# Linux File Permissions
 
-A hands-on learning project exploring Linux file permission structures using `chmod`, `ls -l`, and recursive permission controls.
+This project demonstrates hands-on exploration of Linux file permission structures using real CLI tools. It focuses on securing files and directories through permission management—an essential skill in system administration and cybersecurity.
 
-What This Project Covers
-- Understanding symbolic and numeric file permission modes  
-- Practice with `chmod`, `chown`, and `ls`  
-- Real-world examples of securing files and directories  
-- Recursive permission changes with `chmod -R`  
+## 🧰 Environment
+- **Operating System**: Debian-based Linux
+- **Tools Used**: `chmod`, `chown`, `ls`, `chmod -R`
+- **Objective**: Understand and apply symbolic and numeric permission modes to manage file access securely
+
+## 🔍 What This Project Covers
+- Interpreting symbolic (`rwx`) and numeric (`chmod 755`) file permission structures
+- Changing ownership and access rights using `chmod` and `chown`
+- Practicing recursive permission changes with `chmod -R` on directories
+- Real-world examples to simulate securing sensitive files
+
+## 📁 Repository Contents
