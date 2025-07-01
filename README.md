@@ -14,3 +14,12 @@ This project demonstrates hands-on exploration of Linux file permission structur
 - Real-world examples to simulate securing sensitive files
 
 ## 📁 Repository Contents
+```basic-filepermissions/
+├── basic-filepermissions.txt   # Hands-on examples and notes about Linux file permissions
+└── README.md                   # Project overview and learning objectives
+```
+
+## 📄 Example Command
+```bash
+chmod 750 confidential-report.txt
+```
