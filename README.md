@@ -1,4 +1,4 @@
-Linux File Permissions
+#Linux File Permissions
 
 A hands-on learning project exploring Linux file permission structures using `chmod`, `ls -l`, and recursive permission controls.
 
