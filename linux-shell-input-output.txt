@@ -1,4 +1,4 @@
-Step 1:
+Step 1: Generate output with the echo command
 
 analyst@19679e3f0537:~$ echo hello
 hello
@@ -7,7 +7,7 @@ hello
 analyst@19679e3f0537:~$ echo "Sal"
 Sal
 
-Step 2:
+Step 2: Generate output with the expr command
 
 analyst@19679e3f0537:~$ expr 32 - 8
 24
@@ -15,12 +15,14 @@ analyst@19679e3f0537:~$ expr 3500 * 12
 42000
 analyst@19679e3f0537:~$ clear
 
-Step 3:
+Step 3:Clear the Bash shell
+
 analyst@19679e3f0537:~
 
 
 
 
-Step 4: 
+Step 4: Perform more calculations with the expr command (Note: This command was used to demonstrate literal string echoing behavior. The shell correctly outputs the input without evaluating it as a calculation.)
+
 analyst@19679e3f0537:~$ echo expr 0839475126 + 1
 expr 0839475126 + 1
