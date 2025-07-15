@@ -52,5 +52,3 @@ This report was completed as part of the Google Cybersecurity Certificate. It ex
 - Practiced core Bash functionality for working with system communication
 - Gained confidence using shell commands to validate input and structure outputs
 - Built foundational skills applicable to more advanced Linux scripting, automation, and incident investigation
-
----
