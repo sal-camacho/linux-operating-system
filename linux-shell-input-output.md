@@ -8,7 +8,7 @@
 
 ---
 
-## Linux Shell Input and Output — Bash Commands Lab
+## Linux Shell Input and Output — Bash Commands
 
 This report was completed as part of the Google Cybersecurity Certificate. It explores how to generate and interpret input/output in a Linux Bash shell using foundational CLI commands. The activity uses `echo`, `expr`, and `clear` to demonstrate how users interact with the operating system at the shell level.
 
