@@ -1,1 +1,58 @@
+Step 1: Get the current directory information
 
+analyst@0aff30a89bc1:~$ pwd
+/home/analyst
+analyst@0aff30a89bc1:~$ ls
+logs  projects  reports  temp
+
+Step 2: Change directory and list the subdirectories
+
+analyst@0aff30a89bc1:~$ cd reports
+analyst@0aff30a89bc1:~/reports$
+or
+analyst@0aff30a89bc1:~$ cd /home/analyst/reports
+analyst@0aff30a89bc1:~/reports$ ls
+users
+
+Step 3: Locate and read the contents of a file
+
+nalyst@0aff30a89bc1:~/reports$ cd /home/analyst/reports/users
+analyst@0aff30a89bc1:~/reports/users$
+or
+analyst@0aff30a89bc1:~/reports$ cd users
+analyst@0aff30a89bc1:~/reports/users$ ls
+Q1_added_users.txt  Q1_deleted_users.txt
+analyst@0aff30a89bc1:~/reports/users$ cat Q1_added_users.txt
+employee_id  username  department
+1001         bmoreno   Marketing
+1026         apatel    Human Resources
+1041         cgriffin  Sales
+1104         mreed     Information Technology
+1177         aezra     Human Resources
+1188         noshiro   Finance
+or
+analyst@0aff30a89bc1:~/reports/users$ cat /home/analyst/reports/users/Q1_added_users.txt
+employee_id  username  department
+1001         bmoreno   Marketing
+1026         apatel    Human Resources
+1041         cgriffin  Sales
+1104         mreed     Information Technology
+1177         aezra     Human Resources
+1188         noshiro   Finance
+
+Step 4: Navigate to a directory and locate a file
+
+analyst@0aff30a89bc1:~/reports/users$ cd /home/analyst/logs
+analyst@0aff30a89bc1:~/logs$ ls
+server_logs.txt
+analyst@0aff30a89bc1:~/logs$ head server_logs.txt
+2022-09-28 13:55:55 info    User logged on successfully
+2022-09-28 13:56:22 error   The password is incorrect
+2022-09-28 13:56:48 warning The file storage is 75% full
+2022-09-28 15:55:55 info    User logged on successfully
+2022-09-28 15:56:22 error   The username is incorrect
+2022-09-28 15:56:48 warning The file storage is 90% full
+2022-09-28 16:55:55 info    User navigated to settings page
+2022-09-28 16:56:22 error   The password is incorrect
+2022-09-28 16:56:48 warning The current user’s password expires in 15 days
+2022-09-29 13:55:55 info    User logged on successfully
