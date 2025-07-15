@@ -1,27 +1,37 @@
-Step 1: Get the current directory information
+Step 1: Get the current directory information. Identifies the shell's starting location using pwd and confirms its structure by listing contents with ls. This establishes a baseline for navigation within the file system.
 
 analyst@0aff30a89bc1:~$ pwd
 /home/analyst
 analyst@0aff30a89bc1:~$ ls
 logs  projects  reports  temp
 
-Step 2: Change directory and list the subdirectories
+Step 2: Change directory and list the subdirectories demonstrate the use of the cd command with both relative and absolute paths to navigate to the reports directory. The ls command is used to check which subdirectories are available for further exploration.
 
+# Uses relative path from current location
 analyst@0aff30a89bc1:~$ cd reports
 analyst@0aff30a89bc1:~/reports$
+
 or
+
+# Uses absolute path from root
 analyst@0aff30a89bc1:~$ cd /home/analyst/reports
 analyst@0aff30a89bc1:~/reports$ ls
 users
 
-Step 3: Locate and read the contents of a file
+Step 3: Locate and read the contents of a file by navigating to the user's subdirectory and inspecting the Q1_added_users.txt file using the cat command.
 
+# Uses absolute path for navigation
 nalyst@0aff30a89bc1:~/reports$ cd /home/analyst/reports/users
 analyst@0aff30a89bc1:~/reports/users$
+
 or
+
+# Uses relative path from /reports
 analyst@0aff30a89bc1:~/reports$ cd users
 analyst@0aff30a89bc1:~/reports/users$ ls
 Q1_added_users.txt  Q1_deleted_users.txt
+
+# Displays contents using relative path
 analyst@0aff30a89bc1:~/reports/users$ cat Q1_added_users.txt
 employee_id  username  department
 1001         bmoreno   Marketing
@@ -30,7 +40,10 @@ employee_id  username  department
 1104         mreed     Information Technology
 1177         aezra     Human Resources
 1188         noshiro   Finance
+
 or
+
+# Displays contents using absolute path
 analyst@0aff30a89bc1:~/reports/users$ cat /home/analyst/reports/users/Q1_added_users.txt
 employee_id  username  department
 1001         bmoreno   Marketing
@@ -40,7 +53,7 @@ employee_id  username  department
 1177         aezra     Human Resources
 1188         noshiro   Finance
 
-Step 4: Navigate to a directory and locate a file
+Step 4: Navigate to the /home/analyst/logs directory and use the head command to read the first 10 lines of server_logs.txt. This helps reinforce the basics of reading logs and shows how to effectively filter command-line output.
 
 analyst@0aff30a89bc1:~/reports/users$ cd /home/analyst/logs
 analyst@0aff30a89bc1:~/logs$ ls
