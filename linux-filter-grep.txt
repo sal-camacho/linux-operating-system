@@ -1,1 +1,36 @@
+Step 1: Search for error messages in a log file by using grep to filter and isolate lines containing the word "error." This method is essential for pinpointing authentication problems, system failures, or unauthorized access attempts.
 
+analyst@d251b87cb3b6:~$ cd logs
+analyst@d251b87cb3b6:~/logs$ grep error server_logs.txt
+2022-09-28 13:56:22 error   The password is incorrect
+2022-09-28 15:56:22 error   The username is incorrect
+2022-09-28 16:56:22 error   The password is incorrect
+2022-09-29 13:56:22 error   An unexpected error occurred
+2022-09-29 15:56:22 error   Unauthorized access
+2022-09-29 16:56:22 error   Unauthorized access
+
+Step 2: Locate files with specific strings by using `ls` piped into `grep` to filter filenames based on patterns like "Q1" or "access." This method is particularly handy for reviewing user activity or tracking quarterly reports.
+
+analyst@d251b87cb3b6:~/logs$ cd /home/analyst/reports/users
+analyst@d251b87cb3b6:~/reports/users$ ls | grep Q1
+Q1_access.txt
+Q1_added_users.txt
+Q1_deleted_users.txt
+analyst@d251b87cb3b6:~/reports/users$ ls | grep access
+Q1_access.txt
+Q2_access.txt
+Q3_access.txt
+Q4_access.txt
+
+Step 3: Search file contents using grep to look inside individual files for specific strings or usernames. It helps uncover user deletions, department affiliations, and employee data based on structured text entries.
+
+analyst@d251b87cb3b6:~/reports/users$ ls
+Q1_access.txt         Q2_added_users.txt    Q3_deleted_users.txt
+Q1_added_users.txt    Q2_deleted_users.txt  Q4_access.txt
+Q1_deleted_users.txt  Q3_access.txt         Q4_added_users.txt
+Q2_access.txt         Q3_added_users.txt    Q4_deleted_users.txt
+analyst@d251b87cb3b6:~/reports/users$ grep jhill Q2_deleted_users.txt
+1025         jhill     Sales
+analyst@d251b87cb3b6:~/reports/users$ grep "Human Resources" Q4_added_users.txt
+1151         sshah     Human Resources
+1145         msosa     Human Resources
