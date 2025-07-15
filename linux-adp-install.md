@@ -57,6 +57,6 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 
 ## Reflections
 
-- Practicing APT commands improved familiarity with package dependencies and install flows
-- Verifying application presence and CLI functionality is critical in secure environments
-- The lab emphasized foundational Linux skills relevant to system administration and incident response
+- Practicing APT commands improved familiarity with package dependencies and install flows.
+- Verifying application presence and CLI functionality is critical in secure environments.
+- The lab emphasized foundational Linux skills relevant to system administration and incident response.
