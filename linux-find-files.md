@@ -53,8 +53,6 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 
 ## Reflections
 
-- Practicing navigation and file reading strengthens command-line awareness
-- Using relative vs. absolute paths provides flexibility when working across systems
-- Reading logs and user files in plain-text prepares for deeper incident response work
-
----
+- Practicing navigation and file reading strengthens command-line awareness.
+- Using relative vs. absolute paths provides flexibility when working across systems.
+- Reading logs and user files in plain-text prepares for deeper incident response work.
