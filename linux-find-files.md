@@ -13,7 +13,7 @@ As a security analyst, it’s key that you know how to navigate, manage, and ana
 
 ---
 
-# Linux File Navigation — Find Files with CLI Commands Lab
+## Linux File Navigation — Find Files with CLI Commands Lab
 
 This report was completed as part of the Google Cybersecurity Certificate. It documents how to use foundational Linux commands to navigate file structures, locate and read file contents, and analyze shell output. As a security analyst, the ability to interact with remote systems via Bash is essential for performing investigations and routine analysis tasks.
 
