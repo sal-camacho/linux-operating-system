@@ -1,4 +1,4 @@
-''Step 1: Verify that APT is installed Run the apt command to confirm the Advanced Package Tool (APT) is installed on the system. The output should include usage info and version.''
+--Step 1: Verify that APT is installed Run the apt command to confirm the Advanced Package Tool (APT) is installed on the system. The output should include usage info and version.''
 analyst@a23d11c4fef2:~$ apt
 apt 2.2.4 (amd64)
 Usage: apt [options] command
