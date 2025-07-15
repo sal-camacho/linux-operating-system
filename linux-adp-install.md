@@ -55,6 +55,8 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 - Suricata (network intrusion detection)
 - tcpdump (packet sniffer)
 
+---
+
 ## Reflections
 
 - Practicing APT commands improved familiarity with package dependencies and install flows.
