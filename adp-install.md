@@ -1,49 +1,56 @@
-#Linux Package Management — APT Installation Activity
+# Activity Overview
+In this lab activity, you’ll use the Advanced Package Tool (APT) and sudo to install and uninstall applications in a Linux Bash shell.
 
-This report was completed as part of the **Google Cybersecurity Certificate**. It documents how to install, remove, and verify applications using the Advanced Package Tool (APT) in a Debian-based Linux Bash environment. The lab demonstrates how security analysts use CLI tools to manage software while maintaining a secure operating system.
+While installing Linux applications can be a complex task, the APT package manager manages most of this complexity for you and allows you to quickly and reliably manage the applications in a Linux environment.
 
----
+The virtual machine you access in this lab has a Debian-based distribution of Linux running, and that works with the APT package manager. Using a virtual machine prevents damage to a system in the event its tools are used improperly. It also gives you the ability to revert to a previous state.
 
-## 🧑‍💻 Activity Scenario
-
+As a security analyst, it's likely you'll need to know how to install and manage applications on a Linux operating system.
 As a security analyst, you're responsible for ensuring that key network security applications are installed and properly managed. In this activity, you:
 
-- Verified that APT is available
-- Installed and removed **Suricata**
-- Installed **tcpdump**
-- Reinstalled **Suricata**
-- Verified application presence using `apt list --installed`
+- Confirm APT is installed in Bash
+
+-  Install Suricata with APT
+
+- Uninstall Suricata with APT
+
+- Install tcpdump with APT
+
+- Reinstall Suricata with APT
+  
+---
+## Linux Package Management — APT Installation
+
+This report was completed as part of the Google Cybersecurity Certificate. It documents how to install, remove, and verify applications using the Advanced Package Tool (APT) in a Debian-based Linux Bash environment. The lab demonstrates how security analysts use CLI tools to manage software while maintaining a secure operating system.
+## My Contributions
+
+- **Verified APT was installed**
+  - Ran `apt` and confirmed package manager presence and version.
+
+- **Installed Suricata**
+  - Command: `sudo apt install suricata`
+  - Verified by running `suricata` and reviewing version and usage output.
+
+- **Uninstalled Suricata**
+  - Command: `sudo apt remove suricata`
+  - Confirmed removal using `suricata`, which returned an error indicating the binary was missing.
+
+- **Installed tcpdump**
+  - Command: `sudo apt install tcpdump`
+
+- **Listed installed applications**
+  - Command: `apt list --installed`
+  - Verified tcpdump was installed, Suricata was absent (prior to reinstall).
+
+- **Reinstalled Suricata**
+  - Command: `sudo apt install suricata`
+  - Ran `apt list --installed` again to confirm both Suricata and tcpdump were present.
 
 ---
 
-## 🛠️ My Contributions
+## Tools Used
 
-### ✅ Step 1: Verify APT is Installed
-Used the `apt` command to confirm presence of the Advanced Package Tool.  
-APT returned usage information and confirmed version: `apt 2.2.4 (amd64)`
-
----
-
-### ✅ Step 2: Install Suricata
-Ran:
-```bash
-sudo apt install suricata
-
-# 📦 Linux Application Management — APT Installation Lab
-
-This lab report was completed as part of the **Google Cybersecurity Certificate**. It documents how to install, uninstall, and verify applications using the **Advanced Package Tool (APT)** in a Debian-based Linux Bash shell. The activity focuses on hands-on CLI usage to reinforce Linux package management techniques critical for a cybersecurity analyst.
-
----
-
-## 🧑‍💻 Activity Overview
-
-As a security analyst, you were tasked with managing two network traffic inspection tools — **Suricata** and **tcpdump** — in a virtual machine running a Debian-based Linux distribution. The lab required verifying APT availability, managing installations through `sudo`, and confirming application status through CLI queries.
-
----
-
-## 🛠️ My Contributions
-
-### ✅ Step 1: Verify APT is Installed
-Ran:
-```bash
-apt
+- Advanced Package Tool (`APT`)
+- `sudo` for privileged command execution
+- Suricata (network intrusion detection)
+- tcpdump (packet sniffer)
