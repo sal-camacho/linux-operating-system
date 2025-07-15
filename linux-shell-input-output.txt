@@ -1,1 +1,7 @@
-
+Step 1:
+analyst@19679e3f0537:~$ echo hello
+hello
+analyst@19679e3f0537:~$ echo "hello"
+hello
+analyst@19679e3f0537:~$ echo "Sal"
+Sal
