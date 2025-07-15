@@ -54,3 +54,9 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 - `sudo` for privileged command execution
 - Suricata (network intrusion detection)
 - tcpdump (packet sniffer)
+
+## Reflections
+
+- Practicing APT commands improved familiarity with package dependencies and install flows.
+- Verifying application presence and CLI functionality is critical in secure environments.
+- The lab emphasized foundational Linux skills relevant to system administration and incident response.
