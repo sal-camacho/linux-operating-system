@@ -48,8 +48,3 @@ This report was completed as part of the Google Cybersecurity Certificate. It ex
 - Built foundational skills applicable to more advanced Linux scripting, automation, and incident investigation
 
 ---
-
-## Optional Screenshot Section
-
-- Add terminal screenshots showing each command and corresponding result for visual verification
-
