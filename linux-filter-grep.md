@@ -8,6 +8,7 @@ As a security analyst, it’s key to know how to find the information you need. 
 - Practiced reading log entries and identifying user activity and security-related data  
 
 ---
+
 ## Linux Command Filtering — `grep` and Pipe Operator
 
 This report was completed as part of the Google Cybersecurity Certificate. It documents how to filter output in the Bash shell using the `grep` command alongside the pipe (`|`) operator. These tools are essential for streamlining log analysis, extracting meaningful patterns, and investigating system activity across text files.
