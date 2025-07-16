@@ -1,1 +1,57 @@
+Step 1: Create a new directory by using mkdir to set up a workspace or log folder. Confirm its successful creation by listing the contents with ls.
+analyst@80a9e45a56ad:~$ mkdir logs
+analyst@80a9e45a56ad:~$ ls
+logs  notes  reports  temp
 
+Step 2: Remove a directory by using the rmdir command, typically used to clean up unused folders. Confirm the deletion by checking the updated directory structure.
+
+nalyst@80a9e45a56ad:~$ rmdir temp
+analyst@80a9e45a56ad:~$ ls
+logs  notes  reports
+
+Step 3: Move a file using the mv command to transfer Q3patches.txt into the reports folder. Showcases how to navigate using both relative and absolute paths.
+
+# Uses absolute path to reach /home/analyst/notes
+analyst@80a9e45a56ad:~$ cd /home/analyst/notes
+analyst@80a9e45a56ad:~/notes$
+
+or
+
+# Uses relative path from current directory
+analyst@80a9e45a56ad:~$ cd notes
+analyst@80a9e45a56ad:~/notes$ 
+analyst@80a9e45a56ad:~/notes$ mv Q3patches.txt /home/analyst/reports/
+analyst@80a9e45a56ad:~/notes$ ls /home/analyst/reports
+Q1patches.txt  Q2patches.txt  Q3patches.txt
+
+Step 4: Remove a file by using the `rm` command, commonly used to clean up temporary notes or outdated configurations.
+
+analyst@80a9e45a56ad:~/notes$ ls 
+tempnotes.txt
+analyst@80a9e45a56ad:~/notes$ rm tempnotes.txt
+analyst@80a9e45a56ad:~/notes$ ls
+analyst@80a9e45a56ad:~/notes$ 
+
+
+Step 5: Create a new file using the "touch" command to generate an empty file, serving as a placeholder or a documentation point.
+
+analyst@80a9e45a56ad:~/notes$ touch tasks.txt
+analyst@80a9e45a56ad:~/notes$ ls
+tasks.txt
+
+Step 6:  Edit a file by opening the newly created file with nano, adding structured content, and verifying the edits using cat. This showcases live editing without relying on a GUI.
+
+analyst@80a9e45a56ad:~/notes$ nano tasks.txt
+ Completed tasks
+
+  1. Managed file structure in /home/analyst
+
+analyst@80a9e45a56ad:~/notes$ clear
+
+
+
+
+analyst@80a9e45a56ad:~/notes$ cat tasks.txt
+  Completed tasks
+
+  1. Managed file structure in /home/analyst
