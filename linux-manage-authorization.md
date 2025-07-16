@@ -19,15 +19,15 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 
 ## My Contributions
 
-- **Step 1: Check permissions for files in a directory**  
+- **Check permissions for files in a directory**  
   - Used `ls -l` to list permission settings, file types, owners, and group associations  
   - Reviewed access levels for critical files and directories in `/home/analyst`
 
-- **Step 2: Change file permissions**  
+- **Change file permissions**  
   - Identified files with insecure permissions (e.g., world-writable or executable when not needed)  
   - Applied `chmod` commands to correct read, write, and execute settings for secure access
 
-- **Step 3: Remove unauthorized access from directories**  
+- **Remove unauthorized access from directories**  
   - Used `chmod` to strip group/world access on sensitive directories  
   - Verified permission changes using `ls -ld` and ensured secure directory setup
 
