@@ -28,7 +28,7 @@ Package and version choices can be expressed via apt_preferences(5).
 Security details are available in apt-secure(8).
                                         This APT has Super Cow Powers.
 
-Step 2: Install Suricata using APT Use sudo apt install suricata to install Suricata, a network security and intrusion detection application. The terminal will show dependencies and ask for confirmation to continue.
+Step 2:To install Suricata using APT, run the command sudo apt install suricata. This will install Suricata, a network security and intrusion detection application. The terminal will display the required dependencies and prompt for confirmation before proceeding.
 
 analyst@a23d11c4fef2:~$ sudo apt install suricata
 Reading package lists... Done
@@ -198,7 +198,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/suricata.service →
 Processing triggers for man-db (2.9.4-2) ...
 Processing triggers for libc-bin (2.31-13+deb11u13) ...
 
-Step 3: Verify Suricata installation Run suricata to confirm the tool was successfully installed. It should display version information and usage options.
+Step 3: Verify the Suricata installation by running the Suricata command. It should display the version information and usage options, confirming that the tool was successfully installed.
 
 analyst@a23d11c4fef2:~$ suricata
 Suricata 6.0.1
@@ -247,7 +247,7 @@ USAGE: suricata [OPTIONS] [BPF FILTER]
 To run the engine with default configuration on interface eth0 with signature file "signatures.rules", run the command as:
 suricata -c suricata.yaml -s signatures.rules -i eth0
 
-Step 4: Uninstall Suricata Remove Suricata from the system using APT. Confirm uninstallation with the default “Yes” prompt.
+Step 4: Uninstall Suricata by removing it from the system with APT and confirming the uninstallation with the default "Yes" prompt.
 
 analyst@a23d11c4fef2:~$ sudo apt remove suricata
 Reading package lists... Done
@@ -271,12 +271,12 @@ invoke-rc.d: could not determine current runlevel
 invoke-rc.d: policy-rc.d denied execution of stop.
 Processing triggers for man-db (2.9.4-2) ...
 
-Step 5: Confirm Suricata was removed Attempt to run suricata again. If the output shows “No such file or directory,” the removal was successful.
+Step 5: Verify that Suricata has been uninstalled by attempting to run it again. If the output displays “No such file or directory,” the removal was successful.
 
 analyst@a23d11c4fef2:~$ suricata
 -bash: /usr/bin/suricata: No such file or directory
 
-Step 6: Install tcpdump using APT Use sudo apt install tcpdump to install the CLI-based packet sniffing utility for analyzing network traffic.
+Step 6: To install tcpdump using APT, simply run sudo apt install tcpdump. This command installs the CLI-based packet sniffing tool, perfect for analyzing network traffic.
 
 analyst@a23d11c4fef2:~$ sudo apt install tcpdump
 Reading package lists... Done
@@ -306,7 +306,7 @@ Unpacking tcpdump (4.99.0-2+deb11u1) ...
 Setting up tcpdump (4.99.0-2+deb11u1) ...
 Processing triggers for man-db (2.9.4-2) ...
 
-Step 7: List installed applications Run apt list --installed to verify which applications are installed. You should see tcpdump listed
+Step 7: Check the installed applications by running the command apt list --installed. This will display a list of installed applications, and tcpdump should be included in it.
 
 analyst@a23d11c4fef2:~$ apt list --installed
 Listing... Done
@@ -610,7 +610,8 @@ xz-utils/oldstable,oldstable-security,now 5.2.5-2.1~deb11u1 amd64 [installed,aut
 zlib1g-dev/oldstable,oldstable-security,now 1:1.2.11.dfsg-2+deb11u2 amd64 [installed,automatic]
 zlib1g/oldstable,oldstable-security,now 1:1.2.11.dfsg-2+deb11u2 amd64 [installed,automatic]
 
-Step 8: Reinstall Suricata and verify both tools Reinstall Suricata using sudo apt install suricata.
+Step 8: Reinstall Suricata and confirm the functionality of both tools. Use the command sudo apt install suricata to reinstall Suricata.
+
 analyst@a23d11c4fef2:~$ sudo apt install suricata
 Reading package lists... Done
 Building dependency tree... Done
@@ -636,8 +637,7 @@ invoke-rc.d: could not determine current runlevel
 invoke-rc.d: policy-rc.d denied execution of restart.
 Processing triggers for man-db (2.9.4-2) ...
 
-Step 9:
-Confirm both Suricata and tcpdump appear in the installed packages list.
+Step 9: Confirm both Suricata and tcpdump appear in the installed packages list.
 
 analyst@a23d11c4fef2:~$ apt list --installed
 Listing... Done
