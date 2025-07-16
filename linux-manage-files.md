@@ -19,19 +19,19 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 
 ## My Contributions
 
-- **Step 1: Create a new directory**
+- **Create a new directory**
   - Used `mkdir` to add a new directory for test file storage  
   - Verified creation using `ls` to confirm placement  
 
-- **Step 2: Remove a directory**
+- **Remove a directory**
   - Used `rmdir` or `rm -r` to delete test directories after validation  
   - Confirmed removal with a follow-up `ls` check  
 
-- **Step 3: Move a file and delete a file**
+- **Move a file and delete a file**
   - Applied `mv` to relocate specific files to target directories  
   - Used `rm` to delete obsolete or test files after review  
 
-- **Step 4: Create and edit a file with `nano`**
+- **Create and edit a file with `nano`**
   - Launched `nano` to create a new text file  
   - Added structured content for user activity or configuration notes  
   - Saved file and verified with `cat` to confirm final content  
