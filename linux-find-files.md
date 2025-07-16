@@ -19,21 +19,21 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 
 ## My Contributions
 
-- **Step 1: Get the current directory information**
+- **Get the current directory information**
   - Used `pwd` to confirm the current working directory is `/home/analyst`
   - Used `ls` to list directory contents: `logs`, `projects`, `reports`, `temp`
 
-- **Step 2: Change directory and list the subdirectories**
+- **Change directory and list the subdirectories**
   - Used both relative (`cd reports`) and absolute (`cd /home/analyst/reports`) paths
   - Verified the subdirectory `users` exists within the `reports` folder
 
-- **Step 3: Locate and read the contents of a file**
+- **Locate and read the contents of a file**
   - Navigated to `/home/analyst/reports/users`
   - Used `cat Q1_added_users.txt` to review user information
   - Verified employee `aezra` works in Human Resources
   - Identified employee ID `1104` for user `mreed` in IT
 
-- **Step 4: Navigate to a directory and locate a file**
+- **Navigate to a directory and locate a file**
   - Moved to `/home/analyst/logs`
   - Used `ls` to find `server_logs.txt`
   - Used `head server_logs.txt` to view the first 10 lines
