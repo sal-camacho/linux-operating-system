@@ -13,7 +13,7 @@ As a security analyst, setting appropriate access permissions is critical to pro
 
 ---
 
-## Linux Authorization Management — File Permissions and Access Control Lab
+## Linux Authorization Management — File Permissions and Access Control
 
 This report was completed as part of the Google Cybersecurity Certificate. It documents how to examine and manage Linux file permissions to ensure authorized access and secure file handling. You’ll apply CLI-based permission controls that are essential for system auditing and user account protection.
 
