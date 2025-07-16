@@ -1,4 +1,4 @@
-Step 1: Check file and directory details
+Step 1: Check the details of files and directories using ls -l and ls -la to examine file types, permissions, ownership, and hidden files. This step helps establish a baseline for access control across all files in /home/analyst/projects.
 
 researcher2@03fd0a8174fb:~$ cd projects
 researcher2@03fd0a8174fb:~/projects$ ls -1
@@ -25,7 +25,7 @@ drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
 
-Step 2: Change file permissions
+Step 2: Adjust file permissions by using chmod to limit unauthorized access. This involves removing write permissions for others and read permissions for groups, which is crucial for safeguarding sensitive information.
 
 researcher2@03fd0a8174fb:~/projects$ ls -l
 total 20
@@ -51,7 +51,7 @@ drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
 
-Step 3: Change file permissions on a hidden file
+Step 3: Modify permissions on a hidden file by locating files such as .project_x.txt and adjusting access to secure the content. Use the command ls -la to check changes in visibility and access scope.
 
 researcher2@03fd0a8174fb:~/projects$ ls -la 
 total 32
@@ -74,7 +74,7 @@ drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
 
-Step 4: Change directory permissions
+Step 4: Modify directory permissions to manage access by removing unnecessary execute permissions for groups. Use commands like ls -ld or ls -l to confirm the updated permissions.
 
 researcher2@03fd0a8174fb:~/projects$ ls -l 
 total 20
