@@ -1,1 +1,93 @@
+Step 1: Check file and directory details
 
+researcher2@03fd0a8174fb:~$ cd projects
+researcher2@03fd0a8174fb:~/projects$ ls -1
+drafts
+project_k.txt
+project_m.txt
+project_r.txt
+project_t.txt
+researcher2@03fd0a8174fb:~/projects$ ls -l
+total 20
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-rw- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+researcher2@03fd0a8174fb:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 02:10 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 02:25 ..
+-rw--w---- 1 researcher2 research_team   46 Jul 16 02:10 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-rw- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+
+Step 2: Change file permissions
+
+researcher2@03fd0a8174fb:~/projects$ ls -l
+total 20
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-rw- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+researcher2@03fd0a8174fb:~/projects$ chmod o-w project_k.txt
+esearcher2@03fd0a8174fb:~/projects$ ls -l
+total 20
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+esearcher2@03fd0a8174fb:~/projects$ chmod g-r project_m.txt
+researcher2@03fd0a8174fb:~/projects$ ls -l
+total 20
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+
+Step 3: Change file permissions on a hidden file
+
+researcher2@03fd0a8174fb:~/projects$ ls -la 
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 02:10 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 02:25 ..
+-rw--w---- 1 researcher2 research_team   46 Jul 16 02:10 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+researcher2@03fd0a8174fb:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 02:10 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 02:25 ..
+-r--r----- 1 researcher2 research_team   46 Jul 16 02:10 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+
+Step 4: Change directory permissions
+
+researcher2@03fd0a8174fb:~/projects$ ls -l 
+total 20
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
+researcher2@03fd0a8174fb:~/projects$ chmod g-x drafts
+researcher2@03fd0a8174fb:~/projects$ ls -l
+total 20
+drwx------ 2 researcher2 research_team 4096 Jul 16 02:10 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul 16 02:10 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 02:10 project_t.txt
