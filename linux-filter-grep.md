@@ -1,5 +1,5 @@
 # Activity Overview
-In this lab activity, you’ll use the grep command and piping to search for files and to return specific information from files.
+In this activity, you’ll use the grep command and piping to search for files and to return specific information from files.
 
 As a security analyst, it’s key to know how to find the information you need. The ability to search for specific strings can help you locate what you need more efficiently.
 - Searched for specific error messages within system log files  
@@ -8,7 +8,7 @@ As a security analyst, it’s key to know how to find the information you need. 
 - Practiced reading log entries and identifying user activity and security-related data  
 
 ---
-## Linux Command Filtering — `grep` and Pipe Operator Lab
+## Linux Command Filtering — `grep` and Pipe Operator
 
 This report was completed as part of the Google Cybersecurity Certificate. It documents how to filter output in the Bash shell using the `grep` command alongside the pipe (`|`) operator. These tools are essential for streamlining log analysis, extracting meaningful patterns, and investigating system activity across text files.
 
