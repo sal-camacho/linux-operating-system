@@ -1,3 +1,5 @@
+Step 1: Check the details of files and directories using ls -l and ls -la to review permission strings, ownership, and hidden files. This step helps ensure visibility into access control within the /home/researcher2/projects directory.
+
 researcher2@a143dcb3e01c:~$ /home/researcher2/projects
 -bash: /home/researcher2/projects: Is a directory
 researcher2@a143dcb3e01c:~$ cd projects
@@ -8,7 +10,6 @@ drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
 -rw-r----- 1 researcher2 research_team   46 Jun 26 16:25 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_t.txt
-
 researcher2@a143dcb3e01c:~/projects$ ls -la
 total 32
 drwxr-xr-x 3 researcher2 research_team 4096 Jun 26 16:25 .
@@ -20,6 +21,8 @@ drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_t.txt
 
+Step 2: Change file permissions using chmod to restrict access by removing write and read permissions for group and other users. This ensures sensitive project files follow the principle of least privilege.
+
 researcher2@a143dcb3e01c:~/projects$ ls -l
 total 20
 drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
@@ -27,7 +30,6 @@ drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
 -rw-r----- 1 researcher2 research_team   46 Jun 26 16:25 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_t.txt
-
 researcher2@a143dcb3e01c:~/projects$ chmod o-w project_k.txt
 researcher2@a143dcb3e01c:~/projects$ ls -l
 total 20
@@ -36,7 +38,6 @@ drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
 -rw-r----- 1 researcher2 research_team   46 Jun 26 16:25 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_t.txt
-
 researcher2@a143dcb3e01c:~/projects$ chmod g-r project_m.txt 
 researcher2@a143dcb3e01c:~/projects$ ls -l
 total 20
@@ -46,6 +47,8 @@ drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_t.txt
 
+Step 3: Modify the file permissions of a hidden file to secure it. Adjust access to .project_x.txt using symbolic mode, demonstrating how to manage user and group permissions effectively for hidden files.
+
 researcher2@a143dcb3e01c:~/projects$ ls -la
 total 32
 drwxr-xr-x 3 researcher2 research_team 4096 Jun 26 16:25 .
@@ -56,8 +59,20 @@ drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
 -rw------- 1 researcher2 research_team   46 Jun 26 16:25 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_t.txt
-
 researcher2@a143dcb3e01c:~/projects$ chmod u-w,g-w,g+r .project_x.txt
+researcher2@85e5d4af86ba:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 16:32 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jul 16 17:16 ..
+-r--r----- 1 researcher2 research_team   46 Jul 16 16:32 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jul 16 16:32 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 16:32 project_k.txt
+-rw------- 1 researcher2 research_team   46 Jul 16 16:32 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 16:32 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jul 16 16:32 project_t.txt
+
+Step 4: Modify the directory permissions by using chmod to revoke execute permissions for the group on the drafts directory. This helps restrict directory traversal and enhances secure access to the folder.
+
 researcher2@a143dcb3e01c:~/projects$ ls -l
 total 20
 drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
@@ -65,7 +80,6 @@ drwx--x--- 2 researcher2 research_team 4096 Jun 26 16:25 drafts
 -rw------- 1 researcher2 research_team   46 Jun 26 16:25 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Jun 26 16:25 project_t.txt
-
 researcher2@a143dcb3e01c:~/projects$ chmod g-x drafts
 researcher2@a143dcb3e01c:~/projects$ ls -l
 total 20
