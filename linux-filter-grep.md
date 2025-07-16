@@ -15,15 +15,15 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 
 ## My Contributions
 
-- **Step 1: Search for error messages in a file**
+- **Search for error messages in a file**
   - Used `grep "error"` to locate entries containing system error reports
   - Applied case-sensitive search to filter relevant alerts for review
 
-- **Step 2: Search for files that contain a specific string**
+- **Search for files that contain a specific string**
   - Ran recursive search across directories to locate files referencing usernames or warnings
   - Verified results using exact match flags and path inspection
 
-- **Step 3: Search for information in user files**
+- **Search for information in user files**
   - Identified employee data based on department or role keywords
   - Filtered structured files containing user credentials and job titles using targeted string search
 
