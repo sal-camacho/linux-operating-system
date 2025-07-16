@@ -19,6 +19,7 @@ As a security analyst, you're responsible for ensuring that key network security
 - Reinstall Suricata with APT
   
 ---
+
 ## Linux Package Management — APT Installation
 
 This report was completed as part of the Google Cybersecurity Certificate. It documents how to install, remove, and verify applications using the Advanced Package Tool (APT) in a Debian-based Linux Bash environment. The activity demonstrates how security analysts use CLI tools to manage software while maintaining a secure operating system.
