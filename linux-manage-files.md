@@ -13,7 +13,7 @@ When data is well organized, you can more easily detect issues and keep data saf
 
 ---
 
-## Linux File Management — Directory and Nano Editing Lab
+## Linux File Management — Directory and Nano Editing
 
 This report was completed as part of the Google Cybersecurity Certificate. It documents core file operations in a Linux environment including creating, moving, deleting, and modifying files using Bash commands. The activity emphasizes system organization and text manipulation using the `nano` text editor.
 
@@ -52,12 +52,3 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 - Practicing file creation and removal deepens control over Linux workspace organization.  
 - Moving files helps simulate log rotation and structured data retention.  
 - Using `nano` builds fluency with remote text editing, critical for config and audit work.
-
----
-
-## Optional Screenshot Section
-
-- Add terminal screenshots showing:
-  - Created directory path  
-  - Moved file with new location  
-  - `nano` editing interface before and after changes
