@@ -36,12 +36,12 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 ---
 
 ## Tools Used
-
+sudo — to elevate privileges for secure execution of sensitive commands
 - `useradd` — to create new user accounts  
 - `chown` — to assign file ownership  
-- `groupadd` / `usermod` — to manage group membership  
+- `groupadd` - to create new groups
 - `userdel` — to remove accounts and directories  
-
+- `usermod` — to modify user accounts and add users to groups
 ---
 
 ## Reflections
