@@ -1,23 +1,27 @@
-Step 1: Add a new user
+Step 1: Create a new user by using the useradd command to set up their account and assign their primary group.
 
 analyst@8394218b901e:~$ sudo useradd researcher9
 analyst@8394218b901e:~$ sudo usermod -g research_team researcher9
 
 or 
+
 # You could alternatively use the following variation of useradd when creating the user to perform both steps at once
 analyst@8394218b901e:~$ sudo useradd researcher9 -g research_team
 useradd: user 'researcher9' already exists
 
-Step 2: Assign file ownership
+Step 2: Assign ownership of files or directories by using the chown command. This allows a user to gain ownership, granting them access and modification rights.
 
+#This makes researcher9 the owner of project_r.txt, transferring control from the previous user.
 analyst@8394218b901e:~$ sudo chown researcher9 /home/researcher2/projects/project_r.txt
 
-Step 3: Add the user to a secondary group
+Step 3: Add the user to a secondary group by using the usermod command with the -a -G options. This ensures the user is added to an additional group without overwriting their existing group memberships.
 
+#This allows the user to access resources shared with the sales_team group.
 analyst@8394218b901e:~$ sudo usermod -a -G sales_team researcher9
 
-Step 4: Delete a user
+Step 4: To delete a user, use the userdel command to remove their account. If a group was created specifically for them and is no longer needed, you can remove it using the groupdel command.
 
+# If the user's group isn’t their primary group, the groupdel command may succeed without affecting other users.
 analyst@20023f6604ad:~$ sudo userdel researcher9
 userdel: group researcher9 not removed because it is not the primary group of user researcher9.
 analyst@20023f6604ad:~$ sudo groupdel researcher9
