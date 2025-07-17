@@ -7,13 +7,7 @@ When managing this, security analysts need to ensure:
 - not all users get access to the system,
 - new users (those who are new to the organization or a group) are added to the system, and
 - current users who change groups or leave the organization are deleted from the system.
-
-As a security analyst, setting appropriate access permissions is critical to protecting sensitive information and maintaining the overall security of a system.
-- Created a new user account with a home directory  
-- Changed file ownership to assign access rights  
-- Added the user to a new group for role-based access  
-- Removed the user and verified cleanup  
-
+  
 ---
 
 ## Linux User Management — Add, Modify, and Remove Accounts
