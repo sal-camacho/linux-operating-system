@@ -1,1 +1,23 @@
+Step 1: Add a new user
 
+analyst@8394218b901e:~$ sudo useradd researcher9
+analyst@8394218b901e:~$ sudo usermod -g research_team researcher9
+
+or 
+# You could alternatively use the following variation of useradd when creating the user to perform both steps at once
+analyst@8394218b901e:~$ sudo useradd researcher9 -g research_team
+useradd: user 'researcher9' already exists
+
+Step 2: Assign file ownership
+
+analyst@8394218b901e:~$ sudo chown researcher9 /home/researcher2/projects/project_r.txt
+
+Step 3: Add the user to a secondary group
+
+analyst@8394218b901e:~$ sudo usermod -a -G sales_team researcher9
+
+Step 4: Delete a user
+
+analyst@20023f6604ad:~$ sudo userdel researcher9
+userdel: group researcher9 not removed because it is not the primary group of user researcher9.
+analyst@20023f6604ad:~$ sudo groupdel researcher9
