@@ -1,9 +1,12 @@
 # Activity Overview
-In this activity, you’ll use Linux commands to configure authorization.
+In this activity, you’ll use the useradd, usermod, userdel, and chown commands to manage user access in the Linux Bash shell.
+Previously, you focused on authorization, the concept of granting access to specific resources in a system. Another important concept in security is authentication. Authentication is the process of a user proving that they are who they say they are in the system.
 
-Authorization is the concept of granting access to specific resources in a system. It's important because without authorization any user could access and modify all files belonging to other users or system files. This would certainly be a security risk.
+When managing this, security analysts need to ensure:
 
-In Linux, file and directory permissions are used to specify who has access to specific files and directories. You’ll explore file and directory permissions and change the ownership of a file and a directory to limit who can access them.
+- not all users get access to the system,
+- new users (those who are new to the organization or a group) are added to the system, and
+- current users who change groups or leave the organization are deleted from the system.
 
 As a security analyst, setting appropriate access permissions is critical to protecting sensitive information and maintaining the overall security of a system.
 - Created a new user account with a home directory  
