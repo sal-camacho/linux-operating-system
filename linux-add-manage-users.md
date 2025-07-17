@@ -40,6 +40,7 @@ sudo — to elevate privileges for secure execution of sensitive commands
 - `useradd` — to create new user accounts  
 - `chown` — to assign file ownership  
 - `groupadd` - to create new groups
+- `groupdel` — to delete groups after user removal
 - `userdel` — to remove accounts and directories  
 - `usermod` — to modify user accounts and add users to groups
 ---
