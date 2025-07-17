@@ -20,8 +20,7 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 
 - **Use `man` to explore command options**
   - Ran `man useradd` and `man groupadd` to review syntax and flags  
-  - Navigated manual pages using arrow keys and `/search`  
-  - Verified usage examples and default behaviors
+- Verified usage examples and default behaviors
 
 - **Use `whatis` to get command summaries**
   - Ran `whatis chmod`, `whatis passwd`, and `whatis nano`  
@@ -43,7 +42,6 @@ This report was completed as part of the Google Cybersecurity Certificate. It do
 - `man` — to read full manual pages for commands  
 - `whatis` — to get brief command descriptions  
 - `apropos` — to search for commands by keyword  
-- `/search` — to locate specific flags or terms inside `man` pages  
 
 ---
 
