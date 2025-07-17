@@ -1,1 +1,139 @@
+Step 1: Learn more about commands by using whatis to get a quick overview of a command’s purpose, then follow up with man to dive into the full documentation. This approach helps build a solid understanding of how commands work and the options they offer.
 
+analyst@0c11a1da3005:~$ whatis cat
+cat (1)              - concatenate files and print on the standard output
+analyst@0c11a1da3005:~$ man cat
+CAT(1)                            User Commands                           CAT(1)
+
+NAME
+       cat - concatenate files and print on the standard output
+
+SYNOPSIS
+       cat [OPTION]... [FILE]...
+
+DESCRIPTION
+       Concatenate FILE(s) to standard output.
+
+       With no FILE, or when FILE is -, read standard input.
+
+       -A, --show-all
+              equivalent to -vET
+
+       -b, --number-nonblank
+              number nonempty output lines, overrides -n
+
+       -e     equivalent to -vE
+
+       -E, --show-ends
+              display $ at end of each line
+
+       -n, --number
+              number all output lines
+
+       -s, --squeeze-blank
+              suppress repeated empty output lines
+
+       -t     equivalent to -vT
+
+       -T, --show-tabs
+              display TAB characters as ^I
+
+       -u     (ignored)
+
+       -v, --show-nonprinting
+              use ^ and M- notation, except for LFD and TAB
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+EXAMPLES
+       cat f - g
+              Output f's contents, then standard input, then g's contents.
+
+# Press Q to exit this manual page.
+
+analyst@0c11a1da3005:~$ apropos -a first part file
+head (1)             - output the first part of files
+
+Step 2:  Check out the useradd command and open its manual page to learn how to create users and explore the available options. This helps ensure secure account setup and proper system configuration.
+
+analyst@0c11a1da3005:~$ man useradd                 
+USERADD(8)                 System Management Commands                 USERADD(8)
+
+NAME
+       useradd - create a new user or update default new user information
+
+SYNOPSIS
+       useradd [options] LOGIN
+
+       useradd -D
+
+       useradd -D [options]
+
+DESCRIPTION
+       useradd is a low level utility for adding users. On Debian,
+       administrators should usually use adduser(8) instead.
+
+       When invoked without the -D option, the useradd command creates a new
+       user account using the values specified on the command line plus the
+       default values from the system. Depending on command line options, the
+       useradd command will update system files and may also create the new
+       user's home directory and copy initial files.
+
+       By default, a group will also be created for the new user (see -g, -N,
+       -U, and USERGROUPS_ENAB).
+
+OPTIONS
+       The options which apply to the useradd command are:
+
+       --badname
+           Allow names that do not conform to standards.
+
+       -b, --base-dir BASE_DIR
+           The default base directory for the system if -d HOME_DIR is not
+           specified.  BASE_DIR is concatenated with the account name to define
+           the home directory. If the -m option is not used, BASE_DIR must
+           exist.
+
+           If this option is not specified, useradd will use the base directory
+           specified by the HOME variable in /etc/default/useradd, or /home by
+           default.
+
+       -c, --comment COMMENT
+           Any text string. It is generally a short description of the login,
+           and is currently used as the field for the user's full name.
+
+       -d, --home-dir HOME_DIR
+           The new user will be created using HOME_DIR as the value for the
+           user's login directory. The default is to append the LOGIN name to
+           BASE_DIR and use that as the login directory name. The directory
+           HOME_DIR does not have to exist but will not be created if it is
+           missing.
+
+       -D, --defaults
+           See below, the subsection "Changing the default values".
+
+       -e, --expiredate EXPIRE_DATE
+           The date on which the user account will be disabled. The date is
+           specified in the format YYYY-MM-DD.
+
+           If not specified, useradd will use the default expiry date specified
+           by the EXPIRE variable in /etc/default/useradd, or an empty string
+           (no expiry) by default.
+
+# Press Q to exit this manual page.
+
+Step 3: Explore the rm and rmdir commands using whatis to compare their functions. This helps highlight their differences: rm is used to remove files or directories, while rmdir is specifically for removing empty directories.
+
+analyst@0c11a1da3005:~$ whatis rm
+rm (1)               - remove files or directories
+analyst@0c11a1da3005:~$ whatis rmdir
+rmdir (1)            - remove empty directories
+rmdir (2)            - delete a directory
+
+Step 4: Identify the correct command by using apropos with relevant keywords to find the appropriate tool for creating a new group. This confirms that the groupadd command is the right choice for the task.
+
+analyst@0c11a1da3005:~$ apropos -a create new group
+groupadd (8)         - create a new group
