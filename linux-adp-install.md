@@ -9,13 +9,9 @@ As a security analyst, it's likely you'll need to know how to install and manage
 As a security analyst, you're responsible for ensuring that key network security applications are installed and properly managed. In this activity, you:
 
 - Confirm APT is installed in Bash
-
 -  Install Suricata with APT
-
 - Uninstall Suricata with APT
-
 - Install tcpdump with APT
-
 - Reinstall Suricata with APT
   
 ---
