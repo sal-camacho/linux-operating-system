@@ -32,7 +32,7 @@ This repo features:
 | `linux-manage-authorization.md` | Applies least privilege principles to secure sensitive files.           |
 | `linux-add-manage-users.md`  | Adds and removes user accounts and assigns group membership.                |
 | `linux-command-help.md`      | Uses built-in help tools to explore command syntax and usage.               |
-| `linux-find-files.md`        | Locates files using `find`, `locate`, and path filters.                     |
+| `linux-find-files.md`        | Navigates directories and lists contents using `ls`, `cd`, and `pwd`.               |
 | `linux-filter-grep.md`       | Searches file contents using `grep` and regular expressions.                |
 | `linux-shell-input-output.md`| Redirects input/output using pipes, `>` and `<` operators.                  |
 | `linux-adp-install.md`       | Installs and verifies software packages using `apt`.                        |
